@@ -29,11 +29,11 @@
  * class of an object isn't known until runtime).
  *
  * for instance, the following code:
- * public boolean equals(SampleClass other){
+ * public boolean equals(Object other){
  *    //code here
  * }
  * Will override the default equals method when iem1.equals(iem2); is called. That equals method can be used to compare
- * 'this' object with another SampleClass named 'other'.
+ * 'this' object with another Object named 'other'.
  *
  * whereas this code:
  * public String toString(){
@@ -62,7 +62,7 @@ public class SampleClass {
     public int a;
     public boolean b;
 
-    //    implement a custom .equals(SampleClass other){} method here.
+    //    implement a custom .equals(Object other){} method here.
 
 
     //    implement a custom .toString(){} method here.
