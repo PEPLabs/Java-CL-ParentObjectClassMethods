@@ -29,11 +29,11 @@
  * class of an object isn't known until runtime).
  *
  * for instance, the following code:
- * public boolean equals(SampleClass other){
+ * public boolean equals(Object other){
  *    //code here
  * }
  * Will override the default equals method when iem1.equals(iem2); is called. That equals method can be used to compare
- * 'this' object with another SampleClass named 'other'.
+ * 'this' object with another Object named 'other'.
  *
  * whereas this code:
  * public String toString(){
@@ -48,7 +48,7 @@
  * only if two variables represent literally the same object in memory.
  *
  * .toString addendum: What is the default behavior of toString? By default, toString just calls another Object class
- * method, named .hashcode, which generates a random value that can be used to identify this Object. Without a custom
+ * method, named .hashCode, which generates a random value that can be used to identify this Object. Without a custom
  * toString that overrides the Parent class toString, toString would return something like SampleClass@4063272.
  *
  * You can read about all the methods inherited from the Object class, including .equals and .toString, in the
@@ -62,8 +62,7 @@ public class SampleClass {
     public int a;
     public boolean b;
 
-    //    implement a custom .equals(SampleClass other){} method here.
-
+    //    implement a custom .equals(Object other){} method here.
 
     //    implement a custom .toString(){} method here.
 
