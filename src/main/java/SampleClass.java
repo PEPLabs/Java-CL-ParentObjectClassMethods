@@ -64,6 +64,7 @@ public class SampleClass {
 
     //    implement a custom .equals(Object other){} method here.
 
+
     //    implement a custom .toString(){} method here.
 
     
